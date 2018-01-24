@@ -1,0 +1,6 @@
+1. sudo apt-get -y update
+sudo apt-get -y install build-essential cmake libboost-all-dev
+
+2. cmake . && make
+
+3. ./backtest single.csv --verbose or ./backtest *.csv --verbose
