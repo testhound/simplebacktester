@@ -7,7 +7,8 @@ set                         (CMAKE_CXX_STANDARD 14)
 set                         (CMAKE_BUILD_TYPE Release)
 
 set                         (Boost_USE_STATIC_LIBS ON)
-find_package                (Boost 1.54 REQUIRED COMPONENTS date_time program_options system)
+find_package                (Boost 1.54 REQUIRED
+                            COMPONENTS date_time program_options log_setup log system)
 
 add_executable              (backtest backtest.cpp)
 include_directories         (${Boost_INCLUDE})
